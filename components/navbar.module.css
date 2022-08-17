@@ -1,0 +1,32 @@
+.navbar {
+display: flex; 
+align-items: center; 
+justify-content: space-between; 
+padding: 20px; 
+background: var(--fill); 
+color: #EEEEEE; 
+max-height: 64px; 
+box-shadow: inset;
+}
+
+.logo {
+    
+    
+}
+
+/* .navbar a{    
+padding: 14px 16px; 
+text-align: center;
+float:right; 
+text-decoration: none; 
+}
+
+.navbar a:hover {
+background-color: #2e353f;
+color:#EEEEEE;
+}
+
+.navbar a.active {
+background-color: #FF5722;
+}
+   */
