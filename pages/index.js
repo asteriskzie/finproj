@@ -3,7 +3,8 @@ import Layout from '../components/layout'
 //import NestedLayout from '../components/nested-layout'
 
 export default function Home() {
-  console.log("inside Home")
+  const categories = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton']; //nanti pakai reactQuery 
+
   return (
     <>
       <div className = 'rectangle-block'>      
@@ -14,22 +15,12 @@ export default function Home() {
         <h3>Kategori</h3>
         <p>Silahkan memilih kategori yang anda minati :D</p>
         <ul>
-          <li>
-            <Link href='/category'>
-              <a>Kategori 1</a>
-            </Link>
-          </li>
-          <li>
-            <Link href='/'>
-              <a>Kategori 2</a>
-            </Link>
-          </li>
-          <li>
-            <Link href='/'>
-              <a>Kategori 3</a>
-            </Link>
-          </li>
-        </ul>
+          {categories.map((category) => (
+            <li>
+              <Link href='/category'><a>{category}</a></Link>
+            </li>
+          ))}
+        </ul>              
       </div>
     </>
   )

@@ -1,2 +1,0 @@
-BASE_URL=https://avatar.ristek.cs.ui.ac.id
-TOKEN=62fbcdaa2ea397f8deaa647e

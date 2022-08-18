@@ -3,14 +3,14 @@ import styles from './layout.module.css'
 import Navbar from './navbar'
 import Footer from './footer'
 
-export default function Layout ({children}) {
+export default function Layout ({children, name}) {
     return (
         <>
-            <Navbar/>
+            <Navbar name={name}/>
             {/* <Navbar name='asteriskzie'/> */}
-            <div>
+            <main>
                 {children}
-            </div>            
+            </main>            
         </>
     )
 }
