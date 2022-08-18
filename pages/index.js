@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Layout from '../components/layout'
 //import NestedLayout from '../components/nested-layout'
 
-export default function Home() {
+export default function Home(props) {  
   const categories = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton']; //nanti pakai reactQuery 
 
   return (

@@ -9,7 +9,7 @@ export default function Navbar(props) {
             </div>
 
             <div className= {styles.loginState}>
-                <Link href='login'><a>{props.name ? props.name : 'Masuk'}</a></Link>
+                <Link href='login'><a>{props.username ? props.username : 'Masuk'}</a></Link>
             </div>
         </div>
     )
