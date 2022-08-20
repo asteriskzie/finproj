@@ -77,37 +77,10 @@ export default function Post(props) {
     const postId = props.postId;
     const token = props.token;
 
-    const votePost = useMutation((voteType) => {
-        var axios = require('axios');
-        var data = JSON.stringify({
-            postId,
-            voteType
-        });
-
-        var config = {
-            method: 'post',
-            url: 'https://avatar.ristek.cs.ui.ac.id/post/vote',
-            headers: {
-                'X-USER-TOKEN': token,
-                'Authorization': 'Bearer 62fbcdaa2ea397f8deaa647e',
-                'Content-Type': 'application/json'
-            },
-            data: data
-        };
-
-        axios(config)
-            .then(function (response) {
-                console.log(JSON.stringify(response.data));
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-    });
-
     useEffect(() => {
         setUpvote(props.post.upvote)
         setDownvote(props.post.downvote)
-    })
+    }, [props.post.upvote, props.post.downvote])
 
     return (
         <>
