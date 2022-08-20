@@ -2,7 +2,7 @@ import Link from 'next/link'
 import {useState} from 'react'
 import {useRouter} from "next/router"
 
-export default function login (props) {
+export default function login (props) {    
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const router = useRouter(); 
@@ -27,12 +27,16 @@ export default function login (props) {
 
         axios(config)
             .then(function (response) {
+                console.log(props);
+                console.log(props.setUserData);
                 console.log(JSON.stringify(response.data));
-                props.getUserData(response.data);                
+
+                props.setUserData(response.data);     
                 router.push('/')
             })
             .catch(function (error) {
                 console.log(error);
+                alert(error);
             });        
     }
 
