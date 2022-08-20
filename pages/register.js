@@ -69,7 +69,7 @@ export default function Register (props) {
                     <input type="radio" id="user" name="role" onClick = {(e) => setRole("user")}></input>
                     <label htmlFor="user">User</label>
                     <input type="radio" id="admin" name="role" onClick = {(e) => setRole("admin")}></input>
-                    <label for="admin">Admin</label>
+                    <label htmlFor="admin">Admin</label>
                     <br></br>
                     <button type="submit">Submit</button>
                     <br></br>

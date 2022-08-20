@@ -33,7 +33,7 @@ function Threads({categoryId}) {
     <div>
       {data.data.map((thread) => (
         <div className='rectangle-block'>
-          <Link href={`/${encodeURIComponent(categoryId)}/${thread.id}`}>
+          <Link key={`thread-${thread.id}`} href={`/${encodeURIComponent(categoryId)}/${thread.id}`}>
             <a>{thread.name}</a>
           </Link>          
         </div>
