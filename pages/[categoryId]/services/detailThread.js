@@ -16,25 +16,4 @@ async function DetailThread(thread) {
     return data; 
 }
 
-// function Posts({threadId}) {
-//     const { data, error, isLoading, isError } = useQuery('posts', ()=>fetchPosts(threadId));
-//     if (isLoading) {
-//         return <div>Loading...</div>
-//     }
-
-//     if (isError) {
-//         return <div>Error! {error.message}</div>
-//     }
-
-//     return (
-//         <div>
-//             {data.data.map((post) => (
-//                 <div className='rectangle-block'>
-//                     <p>{post.content}</p>
-//                 </div>
-//             ))}      
-//         </div>
-//     );
-// }
-
 export default DetailThread
