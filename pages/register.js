@@ -64,10 +64,10 @@ export default function Register (props) {
                         required                   
                     ></input>
                     <br></br>
-                    <label for="role">Role</label>
+                    <label htmlFor="role">Role</label>
                     <br></br>
                     <input type="radio" id="user" name="role" onClick = {(e) => setRole("user")}></input>
-                    <label for="user">User</label>
+                    <label htmlFor="user">User</label>
                     <input type="radio" id="admin" name="role" onClick = {(e) => setRole("admin")}></input>
                     <label for="admin">Admin</label>
                     <br></br>
